@@ -204,7 +204,7 @@ export function AtlasSidebar() {
     <aside className="flex h-screen w-[240px] shrink-0 flex-col border-r border-border bg-sidebar">
       {/* Logo */}
       <div className="flex h-14 items-center border-b border-border px-5">
-        <span className="font-serif text-base tracking-[0.15em] text-foreground">
+        <span className="text-sm font-semibold tracking-[0.2em] text-foreground">
           ATLAS OS
         </span>
       </div>
