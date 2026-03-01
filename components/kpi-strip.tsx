@@ -14,13 +14,13 @@ function KpiCard({ title, value, change, trend }: KpiCardProps) {
       <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
         {title}
       </span>
-      <div className="flex items-end justify-between">
+      <div className="flex flex-col gap-2">
         <span className="font-mono text-2xl font-semibold tracking-tight text-card-foreground">
           {value}
         </span>
         <div
           className={cn(
-            "flex items-center gap-1 rounded-sm px-1.5 py-0.5 text-xs font-medium",
+            "flex w-fit items-center gap-1 rounded-sm px-1.5 py-0.5 text-xs font-medium",
             trend === "up"
               ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
               : "bg-red-500/10 text-red-600 dark:text-red-400"
