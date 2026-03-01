@@ -3,8 +3,51 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* ATLAS OS — Stealth-Luxury Dark Mode (forced dark) */
+/* ATLAS OS — Light Mode */
 :root {
+  --background: #fafafa;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #09090b;
+  --primary-foreground: #fafafa;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #09090b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #09090b;
+  --destructive: #dc2626;
+  --destructive-foreground: #fafafa;
+  --border: rgba(0, 0, 0, 0.08);
+  --input: rgba(0, 0, 0, 0.08);
+  --ring: rgba(0, 0, 0, 0.12);
+  --chart-1: #2563eb;
+  --chart-2: #059669;
+  --chart-3: #d97706;
+  --chart-4: #7c3aed;
+  --chart-5: #db2777;
+  --radius: 0.375rem;
+  --sidebar: #f8f8f8;
+  --sidebar-foreground: #09090b;
+  --sidebar-primary: #09090b;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-accent: rgba(0, 0, 0, 0.04);
+  --sidebar-accent-foreground: #09090b;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --sidebar-ring: rgba(0, 0, 0, 0.12);
+  --surface: #ffffff;
+  --surface-foreground: #09090b;
+  --hover-bg: rgba(0, 0, 0, 0.04);
+  --hover-bg-strong: rgba(0, 0, 0, 0.06);
+  --active-bg: rgba(0, 0, 0, 0.06);
+  --shimmer: rgba(0, 0, 0, 0.02);
+}
+
+/* ATLAS OS — Stealth-Luxury Dark Mode */
+.dark {
   --background: #050505;
   --foreground: #fafafa;
   --card: #121214;
@@ -40,6 +83,10 @@
   --sidebar-ring: rgba(255, 255, 255, 0.12);
   --surface: #0e0e10;
   --surface-foreground: #fafafa;
+  --hover-bg: rgba(255, 255, 255, 0.04);
+  --hover-bg-strong: rgba(255, 255, 255, 0.06);
+  --active-bg: rgba(255, 255, 255, 0.06);
+  --shimmer: rgba(255, 255, 255, 0.03);
 }
 
 @theme inline {
@@ -83,6 +130,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --color-surface: var(--surface);
   --color-surface-foreground: var(--surface-foreground);
+  --color-hover-bg: var(--hover-bg);
+  --color-hover-bg-strong: var(--hover-bg-strong);
+  --color-active-bg: var(--active-bg);
+  --color-shimmer: var(--shimmer);
 }
 
 @layer base {

@@ -180,8 +180,8 @@ function SidebarSection({ section }: { section: NavSection }) {
               className={cn(
                 "group relative flex items-center gap-2.5 rounded-sm px-3 py-1.5 text-sm transition-colors",
                 item.active
-                  ? "bg-[rgba(255,255,255,0.06)] text-foreground"
-                  : "text-muted-foreground hover:bg-[rgba(255,255,255,0.04)] hover:text-foreground"
+                  ? "bg-active-bg text-foreground"
+                  : "text-muted-foreground hover:bg-hover-bg hover:text-foreground"
               )}
             >
               {item.active && (

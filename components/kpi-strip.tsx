@@ -22,8 +22,8 @@ function KpiCard({ title, value, change, trend }: KpiCardProps) {
           className={cn(
             "flex items-center gap-1 rounded-sm px-1.5 py-0.5 text-xs font-medium",
             trend === "up"
-              ? "bg-emerald-500/10 text-emerald-400"
-              : "bg-red-500/10 text-red-400"
+              ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+              : "bg-red-500/10 text-red-600 dark:text-red-400"
           )}
         >
           {trend === "up" ? (

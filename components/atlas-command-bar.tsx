@@ -22,10 +22,10 @@ export function AtlasCommandBar() {
         <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2">
           <button
             onClick={() => setOpen(true)}
-            className="group relative flex h-11 items-center gap-3 rounded-md border border-border bg-card/90 px-5 shadow-2xl backdrop-blur-md transition-all hover:border-[rgba(255,255,255,0.12)] hover:bg-card"
+            className="group relative flex h-11 items-center gap-3 rounded-md border border-border bg-card/90 px-5 shadow-2xl backdrop-blur-md transition-all hover:border-ring hover:bg-card"
           >
             {/* Subtle shimmer effect */}
-            <div className="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.03)] to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-0 rounded-md bg-gradient-to-r from-transparent via-shimmer to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             <Sparkles className="size-4 text-muted-foreground" />
             <span className="text-sm text-muted-foreground">
               Command Atlas...
@@ -76,7 +76,7 @@ export function AtlasCommandBar() {
                   key={suggestion}
                   onClick={() => setQuery(suggestion)}
                   className={cn(
-                    "group flex items-center justify-between rounded-sm px-2 py-2 text-left text-sm text-muted-foreground transition-colors hover:bg-[rgba(255,255,255,0.04)] hover:text-foreground"
+                    "group flex items-center justify-between rounded-sm px-2 py-2 text-left text-sm text-muted-foreground transition-colors hover:bg-hover-bg hover:text-foreground"
                   )}
                 >
                   <span>{suggestion}</span>
