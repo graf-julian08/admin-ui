@@ -18,7 +18,7 @@ export default function Page() {
           <div className="flex flex-col gap-6 p-6">
             {/* Page title */}
             <div className="flex flex-col gap-1">
-              <h1 className="text-lg font-semibold tracking-tight text-foreground">
+              <h1 className="font-serif text-2xl tracking-tight text-foreground">
                 CFO Ledger
               </h1>
               <p className="text-sm text-muted-foreground">

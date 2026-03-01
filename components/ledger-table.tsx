@@ -130,7 +130,7 @@ export function LedgerTable() {
     <section aria-label="CFO Ledger transactions" className="rounded-md border border-border bg-card">
       {/* Table header area */}
       <div className="flex items-center justify-between border-b border-border px-5 py-3.5">
-        <h2 className="text-sm font-medium text-foreground">Recent Transactions</h2>
+        <h2 className="font-serif text-base text-foreground">Recent Transactions</h2>
         <span className="text-xs text-muted-foreground">
           {TRANSACTIONS.length} entries
         </span>

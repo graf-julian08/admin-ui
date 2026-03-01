@@ -7,7 +7,7 @@ export function DashboardHeader() {
       <nav className="flex items-center gap-1.5 text-sm" aria-label="Breadcrumb">
         <span className="text-muted-foreground">Intelligence</span>
         <span className="text-muted-foreground/50">/</span>
-        <span className="font-medium text-foreground">CFO Ledger</span>
+        <span className="font-serif text-foreground">CFO Ledger</span>
       </nav>
 
       {/* Right side */}
